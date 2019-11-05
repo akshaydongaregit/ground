@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title> Addition </title>
+	</head>
+	<body>
+		
+		<form name="form1" >
+			
+			No1 :
+			<input type="text" name="no1" /> <br>
+			No2 :
+			<input type="text" name="no2" /> <br>
+			Result :
+			<input type="text" name="result" /> <br> <br>
+			
+			<input type="button" onclick="add()" value="Add" />
+		
+		</form>
+		
+		<script language="javascript">
+			function add() {
+				
+				var no1 = document.form1.no1.value;
+				var no2 = document.form1.no2.value;
+				var add = no1 + no2 ;
+				
+				document.form1.result.value = add ; 
+			}
+		</script>
+	</body>
+</html>
